@@ -1,0 +1,38 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de Tâches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestionnaire de Tâches</h1>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form id="form">
+                <label for="taskName" class="hidden">Nom de la tâche :</label>
+                <input type="text" id="taskName" placeholder="Nom de la tâche" required>
+
+                <label for="taskContent" class="hidden">Contenu de la tâche :</label>
+                <input type="text" id="taskContent" placeholder="Contenu de la tâche" required>
+
+                <input type="submit" id="button" value="Ajouter une tâche">
+                <span id="message" class="green"></span>
+            </form>
+        </div>
+
+        <div class="list-container">
+            <ul id="liste"></ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gestionnaire de Tâches. Tous droits réservés.</p>
+    </footer>
+
+    <script src="examin.js"></script>
+</body>
+</html>
